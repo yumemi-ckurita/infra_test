@@ -19,11 +19,11 @@ resource "aws_subnet" "subnet_public1" {
     }
 }
 
-resource "aws_route_table_association" "subnet_public0" {
+resource "aws_route_table_association" "aws_route_table_public0" {
 	subnet_id = aws_subnet.subnet_public0.id
 	route_table_id = aws_route_table.route_table_public.id
 }
-resource "aws_route_table_association" "subnet_public1" {
+resource "aws_route_table_association" "aws_route_table_public1" {
 	subnet_id = aws_subnet.subnet_public1.id
 	route_table_id = aws_route_table.route_table_public.id
 }
